@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Responsive.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="logo">
+      <p>AMAR VERMA</p>
+    </div>
+
+    <div class="menu-cross-bar">
+      <div class="show" id="menu-bar">
+        <i class="fa fa-bars" aria-hidden="true" id="menu" onclick="show()"></i>
+      </div>
+      <div class="hide" id="cross-bar">
+        <i class="fa fa-times" aria-hidden="true" id="cancle" onclick="hide()"></i>
+      </div>
+    </div>
+
+    <div id="list" class="hide">
+      <nav id="nav-list">
+        <a href="#home">HOME</a>
+        <!-- <a href="#about">About</a> -->
+        <a href="#education">EDUCATION</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#profiles">PROFILE</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+  <!-- ===================== -->
+  <section id="home">
+
+    <div class="main-padding">
+      <div class="about-container" data-aos="zoom-in">
+        <!-- <div class="about">
+          <h1>Hii , Its <span>Me</span></h1>
+        </div> -->
+        <div class="name">
+          <h1><span class="hi">HI ,</span> I AM AMAR VERMA</h1>
+        </div>
+        <div class="developer">
+          <div>
+            <h3>My Skills Are <span class="multiple-text">Loading...</span>
+            </h3>
+          </div>
+          <div>
+            <h2>FRONTEND DEVELOPER 😎</h2>
+          </div>
+        </div>
+        <div class="btns">
+          <div class="cv">
+            <button onclick="resume()">Download Resume</button>
+          </div>
+          <div class="project">
+            <button onclick="project()">Projects</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================About section========= -->
+  <section id="about">
+    <div id="about-container" data-aos="fade-right">
+      <h1 class="heading">About <span style="color: rgba(255, 0, 0, 0.678);">Me</span></h1>
+      <div class="flex_about_main">
+        <div class="left-about">
+          <p>I am an enthusiastic and driven student currently pursuing my education in Master of Computer Applications
+            at the LNCT Group Of Colleges in Bhopal. My focus is on making a career in the software development field. I
+            have a strong foundation in Core Java and a diverse skill set that includes:</p>
+          <h3>Expertise & Aspirations</h3>
+          <ul>
+            <li>⦿ Programming Languages: Strong knowledge of Core Java | C++ | Python</li>
+            <li>⦿ Backend: Skilled in Core Java | (JDBC, SERVELET,JSP).</li>
+            <li>⦿ Frontend: Proficient in HTML | CSS | JAVASCRIPT.</li>
+            <li>⦿ Database: Familiar with MYSQL; Concept of Swing</li>
+            <li>⦿ IDEs and other tools: Experienced with eclipse IDE | Vs-code | IntelliJ.</li>
+          </ul>
+          <h2>
+            As a fresher, I aspire to work in technical companies to solve real-world problems by applying my skill set.
+            My goal is to secure a position in an organization where I can learn and grow while gaining valuable
+            experiences in software development.
+          </h2>
+          <div class="conttact-info">
+            <div>
+              <h1>Phone</h1>
+              <p style="font-size: 1.5rem;">9627195219</p>
+            </div>
+
+            <div>
+              <h1>Email :</h1>
+              <p style="font-size: 1.5rem;">amarverma9627@gmail.com</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="right-about">
+          <div class="img-right" data-aos="zoom-in">
+            <img src="assets/f4.jpg" alt="amar_pic">
+
+            <div class="icons">
+              <div class="icon-parent">
+                <a class="ch" href="https://wa.me/qr/BVGXJPQECACMF1 ">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="icon-parent">
+                <a href="www.youtube.com/@coder_amar_10k">
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="icon-parent">
+                <a
+                  href="https://www.linkedin.com/in/amar-verma-91b27a256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="icon-parent">
+                <a href="https://www.instagram.com/">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- ========Education section code==== -->
+  <section id="education">
+    <h1 class="top-heading"><span>E</span>DUCATION</h1>
+    <div class="flex-para">
+
+      <div class="para" data-aos="fade-right">
+        <div class="year">
+          <h1>2024 - 2026</h1>
+          <p>Master of Computer Applications</p>
+          <div class="row">
+            <p></p>
+          </div>
+        </div>
+        <div class="main-headig">
+          <h1>Forte Institute of Technology</h1>
+          <h2>Meerut , Uttar Pradesh</h2>
+        </div>
+        <div class="description">
+          <h1>
+            ➊ Degree Completed: Successfully completed a Master’s degree in Computer Applications. <br>
+            ➋ Projects: Engaged in multiple projects, demonstrating strong technical skills and practical application of
+            knowledge. <br>
+            ➌ Team Collaboration: Worked collaboratively with a team of 04 members on various software development
+            projects, enhancing both technical and interpersonal skills. <br>
+            ➍ Event Organization: Played a key role in organizing and managing technical and cultural events, fostering
+            a
+            vibrant academic community. <br>
+          </h1>
+        </div>
+      </div>
+
+      <div class="para" data-aos="zoom-in">
+        <div class="year">
+          <h1>2021 - 2024</h1>
+          <p>Bachelor of Computer Applications</p>
+        </div>
+        <div class="row">
+          <p></p>
+        </div>
+        <div class="main-headig">
+          <h1>Brahmanand Mahavidalaya </h1>
+          <h2>Bulandshahr, Uttar Pradesh</h2>
+        </div>
+        <div class="description">
+          <h1>
+            ➊ Degree Completed: Successfully completed a Bachelor’s degree in Computer Applications. <br>
+            ➋ Website Development: Developed multiple websites, integrating them with databases to provide dynamic
+            content
+            and user interaction. <br>
+            ➌ Technologies Used: Proficient in HTML, CSS, JavaScript, Java, JDBC, and MySQL for full-stack web
+            development. <br>
+            ➍ College Election Campaign: Organized a college election campaign to raise awareness among students. <br>
+          </h1>
+        </div>
+
+      </div>
+      <div class="para" data-aos="zoom-in">
+
+        <div class="year">
+          <h1>2016 - 2018</h1>
+          <p>Higher Secondary School (12th) </p>
+        </div>
+
+        <div class="row">
+          <p></p>
+        </div>
+        <div class="main-headig">
+          <h1>Inter College Kanouna</h1>
+          <h2>Kanouna Bulandshahr, Uttar Pradesh</h2>
+        </div>
+        <div class="description">
+          <h1>
+            ➊ Subjects Taken: Physics, Chemistry, Mathematics
+            <br>
+            ➋ 𝐄𝐱𝐭𝐫𝐚𝐜𝐮𝐫𝐫𝐢𝐜𝐮𝐥𝐚𝐫 𝐀𝐜𝐭𝐢𝐯𝐢𝐭𝐢𝐞𝐬:
+            <br>
+            1) Cricket: Represented the school in district-level cricket tournaments.
+            <br>
+            2) Volleyball: Played and won a volleyball match representing the school. <br>
+            3) Athletics: Won first prize in the 400-meter race at the school level. <br>
+            4) Kabaddi: Runner-up in the school-level kabaddi competition.
+          </h1>
+        </div>
+
+      </div>
+  </section>
+  <!-- ============Skills section code======= -->
+  <section id="skills">
+    <div class="main-heading-skills">
+      <h1>SKILLS</h1>
+    </div>
+    <div class="Progress-Bar-grid">
+      <div class="progress-details">
+        <h1>Html</h1>
+        <div class="flex-skill">
+          <div class="skill-Container">
+            <div class="progressbar one" data-aos="fade-right"></div>
+          </div>
+          <span>94%</span>
+        </div>
+      </div>
+
+      <div class="progress-details">
+        <h1>CSS</h1>
+        <div class="flex-skill">
+          <div class="skill-Container">
+            <div class="progressbar two" data-aos="fade-right"></div>
+          </div>
+          <span>95%</span>
+        </div>
+      </div>
+      <div class="progress-details">
+        <h1>JavaScript</h1>
+        <div class="flex-skill">
+          <div class="skill-Container">
+            <div class="progressbar three" data-aos="fade-right"></div>
+          </div>
+          <span>85%</span>
+        </div>
+      </div>
+      <div class="progress-details">
+        <h1>React</h1>
+        <div class="flex-skill">
+          <div class="skill-Container">
+            <div class="progressbar four" data-aos="fade-right"></div>
+          </div>
+          <span>79%</span>
+        </div>
+      </div>
+      <div class="progress-details">
+        <h1>GitHub</h1>
+        <div class="flex-skill">
+          <div class="skill-Container">
+            <div class="progressbar five" data-aos="fade-right"></div>
+          </div>
+          <span>75%</span>
+        </div>
+      </div>
+
+      <div class="progress-details">
+        <h1>Java</h1>
+        <div class="flex-skill">
+          <div class="skill-Container">
+            <div class="progressbar six" data-aos="fade-right"></div>
+          </div>
+          <span>94%</span>
+        </div>
+      </div>
+
+      <div class="progress-details">
+        <h1>MySQL</h1>
+        <div class="flex-skill">
+          <div class="skill-Container">
+            <div class="progressbar seven" data-aos="fade-right"></div>
+          </div>
+          <span>98%</span>
+        </div>
+      </div>
+      <div class="progress-details">
+        <h1>C++</h1>
+        <div class="flex-skill">
+          <div class="skill-Container">
+            <div class="progressbar eight" data-aos="fade-right"></div>
+          </div>
+          <span>70%</span>
+        </div>
+      </div>
+      <div class="progress-details">
+        <h1>JDBC</h1>
+        <div class="flex-skill">
+          <div class="skill-Container">
+            <div class="progressbar nine" data-aos="fade-right"></div>
+          </div>
+          <span>80%</span>
+        </div>
+      </div>
+      <div class="progress-details">
+        <h1>COMMUNICATION</h1>
+        <div class="flex-skill">
+          <div class="skill-Container">
+            <div class="progressbar nine" data-aos="fade-right"></div>
+          </div>
+          <span>85%</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- =========Profiles==== -->
+  <section id="profiles" data-aos="zoom-in">
+    <div class="top-heading-profile">
+      <h1>PROFILES</h1>
+    </div>
+    <div class="profile-Grid">
+
+      <div class="profile-name">
+        <a href="">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <h1>Facebook</h1>
+      </div>
+
+      <div class="profile-name">
+        <a href="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <h1>Instgram</h1>
+      </div>
+      <div class="profile-name">
+        <a href="">
+          <h2>In</h2>
+        </a>
+        <h1>Linkedin</h1>
+      </div>
+      <div class="profile-name">
+        <a href="">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <h1>GitHub</h1>
+      </div>
+      <div class="profile-name">
+        <a href="">
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        </a>
+        <h1>youtube</h1>
+      </div>
+      <div class="profile-name">
+        <a href="">
+          <h2>X</h2>
+        </a>
+        <h1>Twiter</h1>
+      </div>
+      <div class="profile-name">
+        <a href="">
+          <i class="fa fa-telegram" aria-hidden="true"></i>
+        </a>
+        <h1>Telegram</h1>
+      </div>
+      <div class="profile-name">
+        <a href="">
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <h1>Whatsapp</h1>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =======portfolio-sdection-code==== -->
+  <section id="portfolio" data-aos="zoom-in">
+    <div class="main-portfo-heading">
+      <h1>PORTFOLIO</h1>
+    </div>
+    <div class="portfo-wrapper">
+      <div class="portfo-container" data-aos="zoom-in">
+
+        <div class="img01">
+          <img src="assets/design1.jpg" alt="">
+          <div class="layer">
+            <a href="https://github.com/Amarverma9627">FRONTEND</a>
+          </div>
+        </div>
+
+        <div class="img02">
+          <img src="assets/design2.jpg" alt="">
+          <div class="layer2">
+            <a href="amarverma9627.github.io/Gym_Fitness/">PERSONAL PROJECT</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="portfo-container" data-aos="flip-left">
+        <img src="assets/ll.jpg" alt="">
+      </div>
+
+      <div class="portfo-container" data-aos="zoom-in">
+        <div class="img03">
+          <img src="assets/design3.jpg" alt="">
+          <div class="layer3">
+            <a href="https://github.com/Amarverma9627">BACKEND</a>
+          </div>
+        </div>
+        <div class="img04">
+          <img src="assets/design4.jpg" alt="">
+          <div class="layer4">
+            <a href="www.youtube.com/@coder_amar_10k">YOUTUBE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======contact-section-code=== -->
+
+  <section id="contact" data-aos="zoom-in">
+    <h1 class="contact-heading-main">CONTACT ME</h1>
+    <div class="contact-info">
+      <div class="left-contact" data-aos="zoom-in">
+        <div class="input">
+          <input type="name" spellcheck="true" placeholder="Name*">
+          <input type="email" spellcheck="true" placeholder="Email*">
+        </div>
+        <div class="Subject">
+          <input type="search" placeholder="Subject*" spellcheck="true">
+        </div>
+        <div class="form-group">
+          <textarea name="text" placeholder="Databases are under maintenance, but you can connect with us through the WhatsApp link available in the button below.
+
+
+            U N D E R - M A I N T E N A N C E
+            "></textarea>
+        </div>
+        <div class="btn">
+          <button>Join WhatsApp</button>
+        </div>
+      </div>
+
+
+
+      <div class="right-contact" data-aos="zoom-in">
+        <div class="right-info">
+          <div class="self-known">
+            <h1>Amar Verma</h1>
+            <h2>FULL STACK DEVELOPER</h2>
+          </div>
+          <div class="Phone">
+            <h1>Phone</h1>
+            <h2>9628195219</h2>
+          </div>
+          <div class="email">
+            <h1>Email</h1>
+            <p>amarverma9627@gmail.com</p>
+          </div>
+          <div class="contact-icon">
+            <div>
+              <a href="https://wa.me/qr/BVGXJPQECACMF1 ">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div>
+              <a href="www.youtube.com/@coder_amar_10k">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/amar-verma-91b27a256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="arrow">
+      <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    </div>
+
+  </section>
+  <footer id="footer">
+    <div>
+      <p>Copyright © Amar verma. Design And Developed By Amar Verma</p>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 800,
+    });
+  </script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
