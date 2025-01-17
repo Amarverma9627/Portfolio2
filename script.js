@@ -19,6 +19,11 @@ window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
 
+let whatsapp=document.getElementById('WhatsApp')
+whatsapp.addEventListener('click',()=>{
+    window.location.href='https://wa.me/qr/BVGXJPQECACMF1 '
+})
+
 // -----menu AND cross----
 function show() {
    let showBar=document.getElementById('menu-bar')
