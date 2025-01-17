@@ -84,14 +84,12 @@ section {
 .menu-cross-bar{
   display: flex;
   font-size: 2.5rem;
-  
+ justify-content: center;
+ align-items: center;
+
 }
-.show{
-  display: block;
-}
-.hide{
-  display: none;
-}
+
+
 #menu{
   display:none;
 }

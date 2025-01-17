@@ -47,3 +47,20 @@ function hide(){
          list.setAttribute('class','hide')
  
 }
+
+
+window.onscroll=()=>{
+    //when will scrollbar down then navbar will hide
+    let tog=document.getElementById('list')
+    tog.setAttribute('class','hide');
+   
+   //and then menu-icon will shown in front
+    let nav=document.getElementById('menu-bar');
+    nav.setAttribute('class','show');
+
+    //and cross icon will hide but menu icon are shown in front
+    let cross=document.getElementById('cross-bar')
+    cross.setAttribute('class','hide');
+    
+}
+
