@@ -160,18 +160,16 @@ section {
 }
 
 .main-padding .name h1 {
-  
-  background-image: url('assets/covid-img.jpg');
+  background-image: url('assets/vv.jpg');
   background-size:cover;
-  background-position:490px;
+  background-position:top;
   letter-spacing: 0.1rem;
   width: 100%;
   background-color: white;
   font-size: 6rem;
   -webkit-background-clip: text;
-  opacity: 0.7;
   color: transparent;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .main-padding .name .hi {
@@ -283,7 +281,7 @@ section .left-about p {
   font-size: 1.9rem;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.1rem;
-  color: #111a46b7;
+  color:rgba(0, 0, 0, 0.788);
   font-weight: 600;
 }
 
@@ -298,7 +296,7 @@ section .left-about h3 {
 
 section .left-about ul li {
   font-size: 1.8rem;
-  color: #080d2491;
+  color: rgba(0, 0, 0, 0.788);
 }
 
 section .left-about h2 {
@@ -306,6 +304,7 @@ section .left-about h2 {
   font-weight: bold;
   color: #0e1536b2;
   height: 14rem;
+  margin-top: 2rem;
   border-bottom: 1px solid rgba(110, 105, 105, 0.644);
 }
 
@@ -395,7 +394,7 @@ section .right-about {
 
 #education .top-heading {
   font-size: 2.5rem;
-  color: rgba(0, 0, 0, 0.623);
+  color: rgba(0, 0, 0, 0.726);
   text-align: center;
   padding-block:5rem 5rem;
   letter-spacing: 0.1rem;
@@ -403,7 +402,7 @@ section .right-about {
 }
 
 #education .top-heading span {
-  color: rgba(255, 0, 0, 0.541);
+  color:rgb(196, 34, 196) ;
 }
 
 #education .flex-para {
@@ -421,7 +420,7 @@ section .right-about {
 
 .para .year h1 {
   font-size: 2rem;
-  color: rgba(3, 3, 43, 0.534);
+  color: rgba(0, 0, 0, 0.705);
 }
 
 .para .year p {
@@ -448,11 +447,11 @@ section .right-about {
 
 .main-headig h1 {
   padding-block: 30px 10px;
-  color: rgba(0, 0, 0, 0.507);
+  color: rgba(0, 0, 0, 0.822);
 }
 
 .main-headig h2 {
-  color: rgba(18, 18, 56, 0.473);
+  color: rgba(18, 18, 56, 0.719);
   padding-block: 0 2rem;
 }
 
@@ -464,7 +463,7 @@ section .right-about {
   font-size: 1.6rem;
   font-size: 800;
   line-height: 2.3rem;
-  color: rgba(0, 0, 0, 0.411);
+  color: rgba(0, 0, 0, 0.795);
 }
 
 /* =========Skills section code=== */
@@ -883,37 +882,37 @@ section .right-about {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 0.1rem;
   padding-block: 0 1.5rem;
-  color: rgba(0, 0, 0, 0.596)
+  color: rgba(0, 0, 0, 0.781)
 }
 
 .right-info .self-known h2 {
   font-size: 1.2rem;
   letter-spacing: 0.04rem;
-  color: rgba(0, 0, 0, 0.411);
+  color: rgba(0, 0, 0, 0.555);
 }
 
 .right-info .Phone h1 {
   font-size: 2rem;
-  color: rgba(0, 0, 0, 0.651);
+  color: rgba(0, 0, 0, 0.795);
   padding-block: 0 1.5rem;
 }
 
 .right-info .Phone h2 {
   font-size: 1.8rem;
-  color: rgba(0, 0, 0, 0.445);
+  color: rgba(0, 0, 0, 0.527);
   font-weight: 800;
 }
 
 .right-info .email h1 {
   font-size: 2rem;
-  color: rgba(0, 0, 0, 0.671);
+  color: rgba(0, 0, 0, 0.733);
   padding-block: 0 1.5rem;
 }
 
 .right-info .email p {
   font-size: 2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgba(0, 0, 0, 0.438);
+  color: rgba(0, 0, 0, 0.541);
   font-weight: 700;
   letter-spacing: 0.1rem;
 }
