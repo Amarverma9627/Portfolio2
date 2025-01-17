@@ -24,7 +24,7 @@
   }
 
   #contact .contact-heading-main {
-    padding-block: 0rem 5rem;
+    padding-block: 3rem 5rem;
   }
 
   #footer {
@@ -708,6 +708,12 @@
   #footer {
     margin-block: 5rem 0;
 
+  }
+  #profiles .top-heading-profile h1{
+    padding-block: 3rem 5rem;
+  }
+  #contact .contact-heading-main {
+    margin-block:5rem 5rem;
   }
 
   /* ==header== */

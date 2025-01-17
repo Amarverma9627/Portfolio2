@@ -25,6 +25,7 @@ section {
   min-height: 100vh;
   width: 100%;
   padding: 0rem 6% 0rem;
+  overflow: hidden;
 }
 
 /* ......header section code...... */
@@ -396,7 +397,7 @@ section .right-about {
   font-size: 2.5rem;
   color: rgba(0, 0, 0, 0.623);
   text-align: center;
-  padding-block: 10rem 5rem;
+  padding-block:5rem 5rem;
   letter-spacing: 0.1rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.192);
 }
@@ -470,7 +471,7 @@ section .right-about {
 #skills .main-heading-skills h1 {
   font-size: 2.5rem;
   color: rgba(0, 0, 0, 0.616);
-  padding-block: 10rem 5rem;
+  padding-block:5rem 5rem;
   text-align: center;
   letter-spacing: 0.1rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.192);
@@ -571,7 +572,7 @@ section .right-about {
   font-size: 2.4rem;
   color: rgba(0, 0, 0, 0.664);
   text-align: center;
-  padding-block: 10rem 5rem;
+  padding-block:5rem 5rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.096);
 }
 
@@ -787,7 +788,7 @@ section .right-about {
   font-size: 2.3rem;
   color: rgba(0, 0, 0, 0.616);
   text-align: center;
-  padding-block: 10rem 5rem;
+  padding-block:5rem 5rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.185);
 }
 
