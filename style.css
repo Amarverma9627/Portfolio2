@@ -222,7 +222,7 @@ section {
   color: white;
   background-color: transparent;
   letter-spacing: 0.1rem;
-  font-family: cursive;
+  font-family:monospace;
 }
 
 .about-container .cv button:hover {
@@ -242,7 +242,7 @@ section {
   transition: all 0.5s ease-in-out;
   letter-spacing: 0.2rem;
   cursor: pointer;
-  font-family: cursive;
+  font-family: monospace;
 }
 
 .about-container .project button:hover {
