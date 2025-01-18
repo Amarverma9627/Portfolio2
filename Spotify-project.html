@@ -22,19 +22,30 @@
         }
 
         html {
-            font-size: 65.5%;
+            font-size: 62.5%;
         }
 
-
-        body {
-
-            background-color: rgb(2, 2, 22);
-        }
-
-        #home {
+        section {
+            min-height: 100vh;
             width: 100%;
-            height: calc(100vh + 0rem);
-            display: flex;
+
+            overflow: hidden;
+        }
+
+        #home p {
+            text-align: center;
+            color: black;
+            font-size: 3.5rem;
+            letter-spacing: 0.1rem;
+            margin-top: 3rem;
+        }
+
+        #home h1 {
+            font-size: 4rem;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            color: rgb(31, 170, 31);
         }
 
         .vdo {
@@ -44,147 +55,170 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            border-right: 2px solid aqua;
-            
+
+            margin-top: 3rem;
+        }
+
+        .about {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
         }
 
         .vdo video {
             opacity: 1;
             object-fit: cover;
-            height: 50%;
+            height: 100%;
             width: 70%;
             border-radius: 10px;
             transition: all 0.4s linear;
-            border: 3px solid white;
+            border: 2px solid white;
+            cursor: pointer;
         }
 
         .vdo video:hover {
             transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 0 20px rgb(225, 228, 228), 0 0 20px rgb(238, 240, 240);
+            box-shadow: 0 0 20px black, 0 0 20px rgb(238, 240, 240);
             border: 3px solid white;
         }
 
-         #home .vdo h1 {
-            padding-top: 5rem;
+        #home .vdo h1 {
+            padding-top: 2rem;
             font-size: 2rem;
             letter-spacing: o.2rem;
             display: inline-block;
             color: rgb(153, 151, 151);
         }
 
-        /* .............right side......... */
-        .about {
-            width: 50%;
-            height: 100%;
-            padding: 2rem;
-            text-align: justify;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
 
-        .about h1 {
-            font-size: 4rem;
-            font-weight: 600;
-            color: white;
-            padding-block:0px 25px;
-            color: rgb(31, 170, 31);
-        }
-
-        .about p {
-            font-size: 2rem;
-            color: white;
-            font-weight: bold;
-            transition: all 0.4s ease-in-out;
-           
-            text-align: justify;
-            letter-spacing: 1px;
-            
-        }
-
-        .about h3 {
-            font-size: 1.5rem;
-            color: white;
-        }
 
         .more-about {
-            position: absolute;
-            background:rgb(133, 221, 130);
-            height: 70%;
-            width:44%;
+            height: 100%;
+            width: 50%;
             overflow: hidden;
             border-radius: 10px;
-            padding: 10px;
             text-align: center;
-            top: 10rem;
             transition: all 0.5s ease-in-out;
-            border: 4px solid rgb(133, 221, 130);
+            padding-inline: 0 4rem;
         }
-        .more-about h3 {
-            position:absolute;
-            color: rgba(0, 0, 0, 0.644);
-            right:1rem;
-            top: 8rem;
-            transition: all 0.5s ease-in-out;
-        }
-        .more-about button{
+
+        .more-about button {
             background-color: rgb(255, 196, 0);
             padding: 10px 20px;
-            margin-block: 20px;
             color: rgb(255, 255, 255);
             font-size: 1.5rem;
             font-weight: bold;
             border-radius: 5rem;
             cursor: pointer;
             border: 2px solid rgb(255, 174, 0);
-            box-shadow: 0 0 20px rgb(255, 187, 0),0 0 20px yellow;
+            box-shadow: 0 0 20px rgb(255, 187, 0), 0 0 20px yellow;
         }
-        .more-about button:hover{
+
+        .more-about button:hover {
             border: 2px solid rgb(255, 174, 0);
             font-size: 1.6rem;
             color: rgba(20, 218, 218, 0.767);
             background-color: transparent;
-            box-shadow: 0 0 20px rgb(255, 187, 0),0 0 20px yellow;
+            box-shadow: 0 0 20px rgb(255, 187, 0), 0 0 20px yellow;
         }
-        .more-about:hover h3{
-            opacity: 0;
-        }
-        .more-about span{
-            color: white;
+
+
+        #home .about p {
+            color: black;
+            text-align: justify;
+            width: 100%;
             font-size: 2rem;
-            letter-spacing: 0.3rem;
-            text-align: center;
+            letter-spacing: 0.2rem;
+            margin-block: 0 4rem;
         }
-        .more-about:hover p{
-            opacity: 1;
-            color:rgb(133, 221, 130) ;
+
+        /* Responsive */
+        @media (max-width:785px){
+            #home p {
+                font-size:3.2rem;
+            }
+
+            #home h1 {
+                font-size: 3.2rem;
+            }
+            .about {
+                flex-direction: column;
+            }
+            .vdo {
+                width: 100%;
+            }
+
+            .more-about {
+                height: 100%;
+                width: 100%;
+                margin-left: 3.5rem;
+
+            }
+            #home .about p{
+                padding: 3rem;
+                margin-block: 0 0rem;
+            }
+            #home .vdo h1 {
+                font-size: 1.8rem;
+                width: 80%;
+            }
         }
-        .more-about:hover {
-            /* height: 70%; */
-            border: 4px solid rgb(133, 221, 130);
-          background-color:transparent;
+        @media (max-width:440px) {
+            #home p {
+                font-size:2.5rem;
+            }
+
+            #home h1 {
+                font-size:2.3rem;
+            }
+
+            .about {
+                flex-direction: column;
+
+            }
+
+            .vdo {
+                width: 100%;
+            }
+
+            #home .vdo h1 {
+                font-size: 1.5rem;
+                width: 80%;
+            }
+
+            .more-about {
+                height: 100%;
+                width: 100%;
+                margin-left: 3.5rem;
+
+            }
+
+            #home .about p {
+                display: flex;
+            }
 
         }
-        .underline{
-           
-        }
-     
     </style>
 </head>
 
 <body>
 
     <section id="home">
-        <div class="vdo">
-            <video controls autoplay muted loop src="assets/aa1.mp4"></video>
-        <h1>⇮This video has more detail on how to create a Spotify clone</h3></h1>
-        </div>
-        <div class="underline"></div>
+        <p>Welcome to my Project !</p>
+        <h1>Spotify Clone</h1>
         <div class="about">
+
+            <div class="vdo">
+                <video controls autoplay muted loop src="assets/color2.mp4"></video>
+                <h1>⇮This video has more detail on how to create a Spotify clone
+                </h1>
+            </div>
+
+
             <div class="more-about">
-                <span>Welcome to my Project !</span>
-                <h1>Spotify Clone</h1>
                 <!-- <h3>⇩More...</h3> -->
                 <p>A Spotify clone is a music streaming platform that imitates the features and functionality of
                     Spotify.
@@ -197,7 +231,7 @@
                 </p>
                 <button>Source Code?</button>
             </div>
-           
+
         </div>
     </section>
 </body>

@@ -11,10 +11,7 @@
     min-height: 100vh;
     overflow: hidden;
 }
-body{
-    /* background-color:rgb(136, 166, 231); */
-    background-color: black;
-}
+
 
 .project {
     display: grid;
@@ -32,7 +29,7 @@ body{
     width:100%;
     border-radius: 20px;
     box-shadow: 0 0 5px rgb(255, 255, 255);
-    background-color: rgba(68, 66, 66, 0.336);
+    background-color: rgba(68, 66, 66, 0.623);
 }
 .project-pic img {
     width: 100%;
@@ -96,7 +93,7 @@ body{
 .Proj{
     position: sticky;
     font-size: 2.5rem;
-    color: rgb(255, 175, 255);
+    color: rgb(25, 235, 235);
     text-align: center;
     font-family: monospace;
     font-weight: 700;
@@ -134,6 +131,9 @@ body{
     .project-pic  .classes_content p{
      font-size:1.5rem;  
     }
+    .Proj{
+        color:black;
+    }
 }
 @media (max-width:450px){
     .project-pic p{
@@ -143,5 +143,6 @@ body{
         font-size:1rem;
           
     }
+    
   
 }
