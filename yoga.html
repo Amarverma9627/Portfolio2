@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            list-style: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            scroll-behavior: smooth;
+            outline: none;
+            color: white;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        section {
+            min-height: 100vh;
+            width: 100%;
+            padding: 3rem;
+            overflow: hidden;
+        }
+
+        #home p {
+            text-align: center;
+            color: black;
+            font-size: 3.5rem;
+            letter-spacing: 0.1rem;
+            margin-top: 3rem;
+        }
+
+        #home h1 {
+            font-size: 4rem;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            color: rgb(31, 170, 31);
+        }
+
+        .vdo {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            margin-top: 3rem;
+        }
+
+        .about {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .vdo video {
+            opacity: 1;
+            object-fit: cover;
+            height: 100%;
+            width: 70%;
+            border-radius: 10px;
+            transition: all 0.4s linear;
+            border: 2px solid white;
+            cursor: pointer;
+        }
+
+        .vdo video:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 0 20px black, 0 0 20px rgb(238, 240, 240);
+            border: 3px solid white;
+        }
+
+        #home .vdo h1 {
+            padding-top: 2rem;
+            font-size: 2rem;
+            letter-spacing: o.2rem;
+            display: inline-block;
+            color: rgb(153, 151, 151);
+        }
+
+
+
+        .more-about{
+            height: 100%;
+            width: 50%;
+            overflow: hidden;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+            
+        }
+
+        .more-about button {
+            background-color: rgb(255, 196, 0);
+            padding: 10px 20px;
+            color: rgb(255, 255, 255);
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 5rem;
+            cursor: pointer;
+            border: 2px solid rgb(255, 174, 0);
+            box-shadow: 0 0 20px rgb(255, 187, 0), 0 0 20px yellow;
+        }
+
+        .more-about button:hover {
+            border: 2px solid rgb(255, 174, 0);
+            font-size: 1.6rem;
+            color: rgba(20, 218, 218, 0.767);
+            background-color: transparent;
+            box-shadow: 0 0 20px rgb(255, 187, 0), 0 0 20px yellow;
+        }
+
+
+        #home .more-about p {
+            color: black;
+            text-align: justify;
+            width: 100%;
+            font-size: 2rem;
+            letter-spacing: 0.2rem;
+            margin-block: 0 4rem;
+        }
+
+        /* Responsive */
+        @media (max-width:785px){
+            #home p {
+                font-size:3.2rem;
+            }
+
+            #home h1 {
+                font-size: 3.2rem;
+            }
+            .about {
+                flex-direction: column;
+            }
+            .vdo {
+                width: 100%;
+            }
+
+            .more-about {
+                height: 100%;
+                width: 100%;
+            }
+            #home .more-about p{
+                width: 100%;
+               padding: 3rem;
+            }
+            #home .vdo h1 {
+                font-size: 1.8rem;
+                width: 80%;
+            }
+            section{
+                padding:0rem;
+            }
+            .more-about button{
+               margin: 3rem;
+            }
+        }
+        @media (max-width:440px) {
+            #home p {
+                font-size:2.5rem;
+            }
+
+            #home h1 {
+                font-size:2.3rem;
+            }
+
+            .about {
+                flex-direction: column;
+
+            }
+
+            .vdo {
+                width: 100%;
+            }
+            .vdo video {
+           
+            height: 100%;
+            width: 90%;
+           
+        }
+            #home .vdo h1 {
+                font-size: 1.7rem;
+                width: 80%;
+            }
+
+            .more-about {
+                height: 100%;
+                width: 100%;
+             
+            }
+            
+            #home .more-about p{
+                width: 100%;
+               
+            }
+            
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="home">
+        <p>Welcome to my Project !</p>
+        <h1>Yoga_Class Project</h1>
+        <div class="about">
+
+            <div class="vdo">
+                <video controls autoplay muted loop src="assets/yogaClass.mp4"></video>
+                <h1>⇮This video has more detail on how to create a Yoga_Class Project
+                </h1>
+            </div>
+
+
+            <div class="more-about">
+                <!-- <h3>⇩More...</h3> -->
+                <p>A Spotify clone is a music streaming platform that imitates the features and functionality of
+                    Spotify.
+                    Spotify clones can allow users to: Stream music from a large library, Create playlists, and Have a
+                    personalized music experience.
+                    Some Spotify clones are built using HTML, CSS, and JavaScript.
+                    Fully functional spotify clone
+                    This project is built using HTML, CSS, and JS and is fully functional and responsive.
+
+                </p>
+                <button>Source Code?</button>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
