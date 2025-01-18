@@ -5,7 +5,7 @@
 }
 
 @media(max-width:1040px) {
-
+  
   /* ==space maintain b/w section ==*/
   #profiles .top-heading-profile h1 {
     padding-block: 0rem 5rem;
@@ -188,6 +188,11 @@
   .profile-name:nth-child(4) {
     border-right: 2px solid rgba(0, 0, 0, 0.397);
 
+  }
+
+  /* arrow */
+  .arrow{
+    right: 1rem;
   }
 
 }
@@ -802,13 +807,17 @@
 
   /* ==education== */
   #education {
+    margin-top: 2rem;
     min-width: 30rem;
+    background-color: rgba(196, 119, 185, 0.637);
+    color: white;
   }
 
   #education .flex-para {
     min-width: 100%;
     height: 100%;
     gap: 2rem;
+    
   }
 
   #education .flex-para .para {
@@ -819,7 +828,13 @@
   #education .flex-para {
     margin-inline: 1rem 0;
   }
+  .para .description h1{
+    color: rgba(255, 255, 255, 0.795);
+  }
 
+  #education .top-heading{
+    color: white;
+  }
   /* ==skills== */
 
   #skills .Progress-Bar-grid {
@@ -839,7 +854,7 @@
   .skill-Container {
     width: 60%;
   }
-
+ 
   /* ==profiles-section-code== */
 
   .profile-Grid {
