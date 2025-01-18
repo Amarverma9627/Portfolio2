@@ -4,7 +4,7 @@
     list-style: none;
     font-family: monospace;
     border: none;
-   
+    
 }
 #home{
     position: relative;
@@ -96,7 +96,7 @@ body{
 .Proj{
     position: sticky;
     font-size: 2.5rem;
-    color: white;
+    color: rgb(255, 175, 255);
     text-align: center;
     font-family: monospace;
     font-weight: 700;
@@ -142,5 +142,6 @@ body{
     .project-pic  .classes_content p{
         font-size:1rem;
           
-       }
+    }
+  
 }
