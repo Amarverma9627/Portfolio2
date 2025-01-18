@@ -93,7 +93,7 @@
 .Proj{
     position: sticky;
     font-size: 2.5rem;
-    color: rgba(0, 0, 0, 0.904);
+    color: black;
     text-align: center;
     font-family: monospace;
     font-weight: 700;
@@ -142,14 +142,6 @@
     .project-pic  .classes_content p{
         font-size:1rem;
           
-    }
-    .project {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(28rem, auto));
-        justify-content:space-evenly;
-       margin: 3rem;
-        gap:4rem;
-    
     }
     
   
