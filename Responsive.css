@@ -5,7 +5,7 @@
 }
 
 @media(max-width:1040px) {
-  
+
   /* ==space maintain b/w section ==*/
   #profiles .top-heading-profile h1 {
     padding-block: 0rem 5rem;
@@ -99,7 +99,7 @@
   /* ===end about code== */
 
   /* ===education== */
-  #education .flex-para {
+  /* #education .flex-para {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, auto));
     gap: 8rem;
@@ -119,6 +119,20 @@
   #education .flex-para .description h1 {
     font-size: 1.7rem;
 
+  } */
+#education{
+  margin-top: 3rem;
+}
+  .slider2 {
+    width: 100%;
+    height: 470px;
+    margin-top: 3rem;
+  }
+
+  .item {
+    width: 38%;
+    height: 90%;
+    left: calc(50% - 110px);
   }
 
   /* ===end education code-- */
@@ -191,7 +205,7 @@
   }
 
   /* arrow */
-  .arrow{
+  .arrow {
     right: 1rem;
   }
 
@@ -228,34 +242,39 @@
     align-items: center;
     color: rgba(0, 0, 0, 0.596);
   }
-  #nav-list{
+
+  #nav-list {
     position: relative;
   }
-  #cancle{
+
+  #cancle {
     display: block;
     justify-content: center;
     align-items: center;
-    right:8rem;
-    top:2rem;
+    right: 8rem;
+    top: 2rem;
     position: absolute;
     color: rgba(0, 0, 0, 0.562);
   }
-  .hide{
+
+  .hide {
     display: none;
 
   }
-  .show{
+
+  .show {
     display: block;
   }
+
   #nav-list {
-    width:100%;
-    height:100vh;
+    width: 100%;
+    height: 100vh;
     position: absolute;
     right: 0;
     top: 7rem;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     background-color: rgb(224, 144, 235);
     gap: 4rem;
     padding-block: 2rem 0;
@@ -263,11 +282,11 @@
 
   #nav-list a {
     color: white;
-    width:15rem;
+    width: 15rem;
     font-size: 1.6rem;
-    text-align:left;
+    text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-weight: 600;
+    font-weight: 600;
   }
 
   /* ==home section code== */
@@ -347,7 +366,7 @@
   }
 
   /* ===education section code== */
-  #education .flex-para {
+  /* #education .flex-para {
     gap: 10rem;
   }
 
@@ -366,6 +385,20 @@
   .flex-para .para .description h1 {
     font-size: 2rem;
     line-height: 2.8rem;
+  } */
+
+  .item {
+    width:50%;
+    height: 80%;
+    left: calc(50% - 150px);
+  }
+  .slider2 {
+    
+    margin-top:8rem;
+  }
+  .part4 .course-detail{
+    font-size:1.5rem;
+    line-height:2rem;
   }
 
   /* ===end education== */
@@ -534,7 +567,7 @@
 
 
   /* ==education section code== */
-  #education .flex-para .para {
+  /* #education .flex-para .para {
     min-width: 100%;
     height: 100%;
     gap: 2rem;
@@ -543,6 +576,31 @@
 
   #education .flex-para {
     margin-inline: 2rem 0;
+  } */
+
+
+  .item {
+    width:55%;
+    height: 80%;
+    left: calc(50% - 150px);
+  }
+  .slider2 {
+    
+    margin-top:8rem;
+  }
+  .part4 .course-detail{
+    font-size:1.5rem;
+    line-height:2rem;
+  }
+  .part4 .session p{
+    font-size:1.5rem;
+   
+  }
+  .part4 .clg-name{
+    margin-top:2rem;
+  }
+  .part4 .clg-name h1{
+    font-size: 1.7rem;
   }
 
   /* ==end education== */
@@ -579,7 +637,7 @@
   #home {
     min-height: 50vh;
     max-width: 100%;
-    background-position:left;
+    background-position: left;
   }
 
   #home .about-container .name h1 {
@@ -636,7 +694,7 @@
 
   /* ==education section code== */
 
-  #education {
+  /* #education {
     min-width: 50rem;
   }
 
@@ -653,8 +711,28 @@
 
   #education .flex-para {
     margin-inline: 1rem 0;
-  }
+  } */
 
+  .item {
+    margin-top: 6rem;
+    width:58%;
+    height: 70%;
+    left: calc(50% - 130px);
+  }
+  #prev{
+    left:10px;
+    color: red;
+  }
+  #next {
+    right:10px;
+    color:red;
+  }
+  .part4 .clg-name{
+    margin-top: 1rem;
+  }
+  .part4 .course-detail{
+    margin-top:0rem;
+  }
   /* ==skills section code== */
   #skills {
     min-width: 40rem;
@@ -731,11 +809,13 @@
     margin-block: 5rem 0;
 
   }
-  #profiles .top-heading-profile h1{
+
+  #profiles .top-heading-profile h1 {
     padding-block: 5rem 5rem;
   }
+
   #contact .contact-heading-main {
-    margin-block:5rem 5rem;
+    margin-block: 5rem 5rem;
   }
 
   /* ==header== */
@@ -780,11 +860,12 @@
     max-width: 100%;
 
   }
-  .right-about .icons{
-   
+
+  .right-about .icons {
+
     width: 100%;
   }
-  
+
 
   /* ==about-section-code== */
   section .left-about {
@@ -806,7 +887,7 @@
   }
 
   /* ==education== */
-  #education {
+  /* #education {
     margin-top: 2rem;
     min-width: 30rem;
     background-color: rgba(196, 119, 185, 0.637);
@@ -817,7 +898,7 @@
     min-width: 100%;
     height: 100%;
     gap: 2rem;
-    
+
   }
 
   #education .flex-para .para {
@@ -828,13 +909,40 @@
   #education .flex-para {
     margin-inline: 1rem 0;
   }
-  .para .description h1{
+
+  .para .description h1 {
     color: rgba(255, 255, 255, 0.795);
   }
 
-  #education .top-heading{
+  #education .top-heading {
     color: white;
+  } */
+
+
+  .slider2 {
+    width: 100%;
   }
+  .item {
+    margin-top: 6rem;
+    width:66%;
+    height: 70%;
+    left: calc(50% - 130px);
+  }
+  #prev{
+    left:10px;
+    color: red;
+  }
+  #next {
+    right:10px;
+    color:red;
+  }
+  .part4 .clg-name{
+    margin-top: 1rem;
+  }
+  .part4 .course-detail{
+    margin-top:0rem;
+  }
+
   /* ==skills== */
 
   #skills .Progress-Bar-grid {
@@ -854,7 +962,7 @@
   .skill-Container {
     width: 60%;
   }
- 
+
   /* ==profiles-section-code== */
 
   .profile-Grid {
@@ -958,4 +1066,23 @@
     z-index: -1;
   }
 
+}
+@media(max-width:420px) {
+
+
+.item {
+  margin-top: 6rem;
+  width:70%;
+  height: 70%;
+  left: calc(50% - 120px);
+
+}
+#next {
+  bottom:-20rem;
+  left: 10rem;
+}
+#prev{
+  bottom:-20rem;
+  left: 15rem;
+}
 }

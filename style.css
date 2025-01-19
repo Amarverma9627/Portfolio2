@@ -390,6 +390,97 @@ section .right-about {
 
 /* ========education section code==== */
 
+/* slider-section-code-- */
+#education{
+  background-image: linear-gradient(to top right, #885cf6, #ec4899);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  
+}
+.slider2 {
+  position: relative;
+  width:100%;
+  height: 470px;
+  overflow: hidden;
+  z-index:10;
+}
+
+.item {
+  position: absolute;
+  width:32%;
+  height:100%;
+  text-align: justify;
+  background-color:#fff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
+  left: calc(50% - 210px);
+  top: 0;
+ overflow: hidden;
+ border: 2px solid ;
+}
+
+#next,
+#prev{
+  position: absolute;
+  top: 40%;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size:xxx-large;
+  font-family: monospace;
+  font-weight: bold;
+  left: 50px;
+}
+
+#next {
+  left: unset;
+  right: 50px;
+
+}
+
+
+.part4 .session{
+  text-align: center;
+  font-family: monospace;
+}
+.part4 .session h1{
+  font-size: 2.4rem;
+}
+.part4 .session p{
+  font-size: 2rem;
+  color: rgb(252, 20, 240);
+  letter-spacing: 0.1rem;
+}
+.part4 .clg-name{
+  margin-top: 3rem;
+}
+.part4 .clg-name h1{
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.part4 .clg-name h2{
+  color: #130b7ee1;
+  padding-top: 1rem;
+  font-size:1.5rem;
+}
+
+.part4 .course-detail{
+  margin-top:2rem;
+}
+
+.part4 .course-detail{
+  font-size:1.7rem;
+  line-height: 3rem;
+}
+/* end code */
+
+
+
+
 #education .top-heading {
   font-size: 2.5rem;
   color: rgba(0, 0, 0, 0.726);

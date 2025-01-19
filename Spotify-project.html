@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 
     <style>
         * {
@@ -134,9 +134,40 @@
             letter-spacing: 0.2rem;
             margin-block: 0 4rem;
         }
+        .angle{
+               position: relative;    
+               width:5rem;
+               height: 4rem; 
+        }
+        .angle a i{
+            font-weight: 600;
+            font-size:3rem;
+            color: black;
+            position:absolute;
+            left: 6rem;
+            top: -5rem;
+            transform: rotate(180deg);
+            animation: angle 1s ease-in-out infinite;
+            transition: all 0.4s linear;
+        }
+        @keyframes angle {
+            0%{
+               color: yellow;
+                transform: translate(0);
+            }
+            50%{   
+                transform: translateY(-15px);
+            }
+            100%{    
+                transform: translate(0);
+            }
+        }
 
         /* Responsive */
         @media (max-width:785px){
+            .angle a i{
+                left: 9rem;
+            }
             #home p {
                 font-size:3.2rem;
             }
@@ -222,7 +253,7 @@
         <div class="about">
 
             <div class="vdo">
-                <video controls autoplay muted loop src="assets/color2.mp4"></video>
+                <video controls autoplay muted loop src="assets/spoti.mp4"></video>
                 <h1>⇮This video has more detail on how to create a Spotify clone
                 </h1>
             </div>
@@ -239,6 +270,7 @@
                     This project is built using HTML, CSS, and JS and is fully functional and responsive.
 
                 </p>
+                <span class="angle"> <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></span>
                 <button>Source Code?</button>
             </div>
 
