@@ -6,14 +6,15 @@
     border: none;
   
 }
-#home{
+#home-main{
     position: relative;
     min-height: 100vh;
     overflow: hidden;
+    padding-block:10rem 0;
 }
 
 
-.project {
+#home-main .project {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, auto));
     justify-content:space-evenly;
@@ -21,17 +22,18 @@
     gap:4rem;
     position: relative;
 }
-.project-pic{
+#home-main .project-pic{
     
     position:relative;
     overflow: hidden;
     height:auto;
     width:100%;
+    height: 100%;
     border-radius: 20px;
     box-shadow: 0 0 5px rgb(255, 255, 255);
     background-color: rgba(68, 66, 66, 0.623);
 }
-.project-pic img {
+#home-main .project-pic img {
     width: 100%;
     height: 85%;
     padding:10px;
@@ -79,18 +81,18 @@
 
 }
 
-.classes_content p{
+#home-main .classes_content p{
     font-size: 1.3rem;
     font-family: monospace;
     font-weight: 600;
     color: antiquewhite;
     padding: 0 2rem;
 }
-.project-pic:hover .classes_content {
+#home-main .project-pic:hover .classes_content {
     bottom: 0%;
 
 }
-.Proj{
+#home-main .Proj{
     position: sticky;
     font-size: 2.5rem;
     color: black;
@@ -100,13 +102,13 @@
    padding-block:0 2rem ;
     border-bottom: 2px solid rgba(31, 29, 29, 0.39);
 }
-.yoga{
+#home-main .yoga{
     position: absolute;
     color: white;
     font-weight: 700;
     font-size: 2rem;
     padding: 10px;
-    bottom:-15px;
+    bottom: 0  ;
     letter-spacing: 0.1rem;
 }
 .covid{
@@ -115,7 +117,7 @@
     font-weight: 900;
     font-size:2rem;
     padding:10px;
-   bottom: -15px;
+   bottom:0px;
 }
 .click #icon{
    display:none;
@@ -144,14 +146,14 @@
 /* Responsive */
 
 @media (max-width:630px) {
-    .project {
+    #home-main .project {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, auto));    
     }
-    .project-pic p{
+    #home-main .project-pic p{
         font-size:1.5rem;
     }
-    .project-pic  .classes_content p{
+    #home-main .project-pic  .classes_content p{
      font-size:1.5rem;  
     }
     .Proj{
@@ -167,39 +169,4 @@
         font-size:1rem;
           
     }
-    .click #icon{
-        font-weight: 600;
-        font-size:1rem;
-        color: rgb(59, 228, 8);
-        position:absolute;
-       bottom:0.6rem;
-       left: 2rem;
-        display: block;
-        animation: angle 1s ease-in-out infinite;
-        transition: all 0.4s linear;
-    }
-    .click{
-        display: block;
-        position: absolute;
-        font-size:1rem;
-        right:8rem;
-        bottom: 2.5rem;
-        color: white;
-        animation: click 1s ease-in-out infinite;
-    }
-    @keyframes click {
-        0%{
-           
-            transform: translate(0);
-        }
-        50%{   
-            transform: translateY(-15px);
-        }
-        100%{    
-            color: rgb(64, 238, 215);
-            transform: translate(0);
-        }
-    }
-    
-  
-}
+   }
