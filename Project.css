@@ -108,7 +108,7 @@
     font-weight: 700;
     font-size: 2rem;
     padding: 10px;
-    bottom: 0  ;
+    bottom:0;
     letter-spacing: 0.1rem;
 }
 .covid{
@@ -148,7 +148,7 @@
 @media (max-width:630px) {
     #home-main .project {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, auto));    
+        grid-template-columns: repeat(auto-fit, minmax(30rem, auto));    
     }
     #home-main .project-pic p{
         font-size:1.5rem;
