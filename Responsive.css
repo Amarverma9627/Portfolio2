@@ -902,55 +902,7 @@
   }
 
   /* ==profile== */
-  .profile-name:nth-child(1) {
-    border: 2px solid rgba(0, 0, 0, 0.397);
-    border-right: 2px solid rgba(0, 0, 0, 0.397);
-    border-bottom: none;
-  }
-
-  .profile-name:nth-child(2) {
-    border: 2px solid rgba(0, 0, 0, 0.397);
-    border-bottom: none;
-  }
-
-  .profile-name:nth-child(3) {
-    border: 2px solid rgba(0, 0, 0, 0.397);
-    border-bottom: none;
-    border-right: 2px solid rgba(0, 0, 0, 0.397);
-  }
-
-  .profile-name:nth-child(5) {
-
-    border: 2px solid rgba(0, 0, 0, 0.397);
-    border-right: 2px solid rgba(0, 0, 0, 0.397);
-  }
-
-  .profile-name:nth-child(6) {
-    border: 2px solid rgba(0, 0, 0, 0.397);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.397);
-    border-top: none;
-  }
-
-  .profile-name:nth-child(7) {
-    border: 2px solid rgba(0, 0, 0, 0.397);
-    border-right: 2px solid rgba(0, 0, 0, 0.397);
-    border-top: none;
-  }
-
-  .profile-name:nth-child(8) {
-    border: 2px solid rgba(0, 0, 0, 0.397);
-    border-top: none;
-  }
-
-  /* ====bottom row== */
-
-  .profile-name:nth-child(4) {
-    border: 2px solid rgba(0, 0, 0, 0.397);
-    border-bottom: none;
-
-  }
-
-  .profile-Grid .profile-name:after {
+    .profile-Grid .profile-name:after {
     content: '';
     position: absolute;
     transform: scale(0);
