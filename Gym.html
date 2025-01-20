@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zym_Fitness</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="Responsive.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <style>
         * {
             margin: 0;
@@ -25,6 +27,7 @@
             font-size: 62.5%;
         }
 
+
         section {
             min-height: 100vh;
             width: 100%;
@@ -32,15 +35,16 @@
             overflow: hidden;
         }
 
-        #home p {
+        #home-spoti .top p {
+            margin-top: 5rem;
             text-align: center;
             color: black;
             font-size: 3.5rem;
             letter-spacing: 0.1rem;
-            margin-top: 3rem;
+
         }
 
-        #home h1 {
+        #home-spoti h1 {
             font-size: 4rem;
             font-weight: 600;
             color: white;
@@ -48,27 +52,34 @@
             color: rgb(31, 170, 31);
         }
 
-        .vdo {
+        #home-spoti .about {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            margin-top: 4rem;
+        }
+
+        #home-spoti .vdo {
             height: 100%;
             width: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-
-            margin-top: 3rem;
         }
 
-        .about {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
+        #home-spoti .vdo p {
+            color: rgb(142, 10, 194);
+            letter-spacing: 0.1rem;
+            font-size: 2rem;
+            text-align: justify;
+            line-height: 3rem;
+            padding: 3rem;
+            background-image: linear-gradient(to right, rgb(130, 233, 185), transparent);
         }
 
-        .vdo video {
+
+        #home-spoti .vdo video {
             opacity: 1;
             object-fit: cover;
             height: 100%;
@@ -79,13 +90,13 @@
             cursor: pointer;
         }
 
-        .vdo video:hover {
+        #home-spoti .vdo video:hover {
             transform: translateY(-5px) scale(1.05);
             box-shadow: 0 0 20px black, 0 0 20px rgb(238, 240, 240);
             border: 3px solid white;
         }
 
-        #home .vdo h1 {
+        #home-spoti .vdo h1 {
             padding-top: 2rem;
             font-size: 2rem;
             letter-spacing: o.2rem;
@@ -95,186 +106,272 @@
 
 
 
-        .more-about{
+        #home-spoti .more-about {
             height: 100%;
             width: 50%;
-            overflow: hidden;
             border-radius: 10px;
             text-align: center;
             transition: all 0.5s ease-in-out;
-            
+
         }
 
-        .more-about button {
+        #home-spoti .more-about button {
+            margin-top: 6rem;
+            background-color: #ffffff;
+        }
+
+        #home-spoti .more-about button a {
             background-color: rgb(255, 196, 0);
             padding: 10px 20px;
-            color: rgb(255, 255, 255);
+            color: #ffffff;
             font-size: 1.5rem;
+            text-decoration: none;
             font-weight: bold;
             border-radius: 5rem;
             cursor: pointer;
             border: 2px solid rgb(255, 174, 0);
             box-shadow: 0 0 20px rgb(255, 187, 0), 0 0 20px yellow;
+
         }
 
-        .more-about button:hover {
+        #home-spoti .more-about button:hover a {
             border: 2px solid rgb(255, 174, 0);
             font-size: 1.6rem;
-            color: rgba(20, 218, 218, 0.767);
+            color: rgba(20, 218, 53, 0.767);
             background-color: transparent;
             box-shadow: 0 0 20px rgb(255, 187, 0), 0 0 20px yellow;
+
         }
 
+        #home-spoti .more-about h1 {
+            color: rgb(248, 30, 77);
+            text-align: justify;
+            width: 100%;
+            font-size: 1.7rem;
+            letter-spacing: 0.2rem;
+            line-height: 3rem;
+            background-image: linear-gradient(to right, rgb(223, 255, 165), transparent);
+            padding: 2rem;
+            margin-block: 2rem;
+        }
 
-        #home .more-about p {
-            color: black;
+        #home-spoti .more-about p {
+            color: rgb(34, 117, 34);
             text-align: justify;
             width: 100%;
             font-size: 2rem;
             letter-spacing: 0.2rem;
-            margin-block: 0 4rem;
+            line-height: 3rem;
+            background-image: linear-gradient(to right, rgb(249, 184, 255), transparent);
+            padding: 2rem;
         }
-        .angle{
-               position: relative;    
-               
-               
+
+        #home-spoti .angle {
+            position: relative;
+            width: 5rem;
+            height: 4rem;
         }
-        .angle a i{
+
+        #home-spoti .angle a i {
             font-weight: 600;
-            font-size:3rem;
+            font-size: 3rem;
             color: black;
-            position:absolute;
+            position: absolute;
             left: 6rem;
             top: -5rem;
             transform: rotate(180deg);
             animation: angle 1s ease-in-out infinite;
             transition: all 0.4s linear;
         }
+
+        .spoti-nav a {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-inline: 2.6rem 0rem;
+            letter-spacing: 0.1rem;
+            color: black;
+        }
+
         @keyframes angle {
-            0%{
-               color: yellow;
+            0% {
+                color: yellow;
                 transform: translate(0);
             }
-            50%{   
+
+            50% {
                 transform: translateY(-15px);
             }
-            100%{    
+
+            100% {
                 transform: translate(0);
             }
         }
+
         /* Responsive */
-        @media (max-width:785px){
-            .angle a i{
-                left: 9rem;
-            }
-            #home p {
-                font-size:3.2rem;
+        @media (max-width:785px) {
+
+            #home-spoti .top p {
+                font-size: 3.2rem;
+                margin-top: 10rem;
             }
 
-            #home h1 {
+            #home-spoti h1 {
                 font-size: 3.2rem;
             }
-            .about {
+
+            #home-spoti .about {
                 flex-direction: column;
             }
-            .vdo {
+
+            #home-spoti .vdo {
                 width: 100%;
             }
 
-            .more-about {
+            #home-spoti .more-about {
                 height: 100%;
                 width: 100%;
             }
-            #home .more-about p{
+
+            #home-spoti .more-about p {
                 width: 100%;
-               padding: 3rem;
+                padding: 3rem;
             }
-            #home .vdo h1 {
+
+            #home-spoti .vdo h1 {
                 font-size: 1.8rem;
                 width: 80%;
             }
-            section{
-                padding:0rem;
+
+            section {
+                padding: 0rem;
             }
-            .more-about button{
-               margin: 3rem;
+
+            #home-spoti .more-about button {
+                margin-block: 6rem;
             }
         }
+
         @media (max-width:440px) {
-            #home p {
-                font-size:2.5rem;
+            #home-spoti .top p {
+                font-size: 2.5rem;
             }
 
-            #home h1 {
-                font-size:2.3rem;
+            #home-spoti h1 {
+                font-size: 2.3rem;
             }
 
-            .about {
+            #home-spoti .about {
                 flex-direction: column;
 
             }
 
-            .vdo {
+            #home-spoti .vdo {
                 width: 100%;
             }
-            .vdo video {
-           
-            height: 100%;
-            width: 90%;
-           
-        }
-            #home .vdo h1 {
+
+            #home-spoti .vdo video {
+
+                height: 100%;
+                width: 90%;
+
+            }
+
+            #home-spoti .vdo h1 {
                 font-size: 1.7rem;
                 width: 80%;
             }
 
-            .more-about {
+            #home-spoti .more-about {
                 height: 100%;
                 width: 100%;
-             
+
             }
-            
-            #home .more-about p{
+
+            #home-spoti .more-about p {
                 width: 100%;
-               
+
             }
-            
+
 
         }
     </style>
 </head>
 
 <body>
+    <header id="header">
+        <div class="logo">
+            <p>AMAR VERMA</p>
+        </div>
 
-    <section id="home">
-        <p>Welcome to my Project !</p>
-        <h1>Zym-fitness</h1>
+        <div class="menu-cross-bar">
+            <div class="show" id="menu-bar">
+                <i class="fa fa-bars" aria-hidden="true" id="menu" onclick="show()"></i>
+            </div>
+            <div class="hide" id="cross-bar">
+                <i class="fa fa-times" aria-hidden="true" id="cancle" onclick="hide()"></i>
+            </div>
+        </div>
+
+        <div id="list" class="hide">
+            <nav id="nav-list" class=" spoti-nav">
+                <a href="index.html">HOME</a>
+                <!-- <a href="#about">About</a> -->
+                <a href="index.html#education">EDUCATION</a>
+                <a href="index.html#skills">SKILLS</a>
+                <a href="index.html#profiles">PROFILE</a>
+                <a href="index.html#portfolio">PORTFOLIO</a>
+                <a href="index.html#contact">CONTACT</a>
+                <a href="Projects.html">PROJECTS</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home-spoti">
+        <div class="top">
+            <p>Welcome to my Project !</p>
+            <h1>Zym_Fitness</h1>
+        </div>
         <div class="about">
 
             <div class="vdo">
                 <video controls autoplay muted loop src="assets/Gym.mp4"></video>
-                <h1>⇮This video has more detail on how to create a Zym-fitness
+                <h1>⇮This video has more detail on how to create a Zym_Fitness
                 </h1>
+                <p>1) Gym exercises are physical activities that can be performed using weights or machines. They can
+                    help improve strength, balance, and coordination. Some examples of gym exercises include:
+                    <br>
+                    2) Strength training. Do strength training exercises for all major muscle groups at least two times
+                    a week. One set of each exercise is enough for health and fitness benefits. Use a weight or
+                    resistance level heavy enough to tire your muscles after about 12 to 15 repetitions.
+                </p>
             </div>
 
 
             <div class="more-about">
                 <!-- <h3>⇩More...</h3> -->
-                <p>A Spotify clone is a music streaming platform that imitates the features and functionality of
-                    Spotify.
-                    Spotify clones can allow users to: Stream music from a large library, Create playlists, and Have a
-                    personalized music experience.
-                    Some Spotify clones are built using HTML, CSS, and JavaScript.
-                    Fully functional spotify clone
-                    This project is built using HTML, CSS, and JS and is fully functional and responsive.
+                <h1>
+                    1) It will likely include body weight exercises like squats, push-ups, and lunges, and exercises
+                    involving resistance from a weight, a band, or a weight machine. It's important to feel some muscle
+                    fatigue at the end of the exercise to make sure you are working or training the muscle group
+                    effectively.
+                </h1>
+                <p>
+                    1) Exercise boosts energy:-
+                    Winded by grocery shopping or household chores? Regular physical activity can improve your muscle
+                    strength and boost your endurance.
+
+                    Exercise sends oxygen and nutrients to your tissues and helps your cardiovascular system work more
+                    efficiently. And when your heart and lung health improve, you have more energy to tackle daily
+                    chores.
 
                 </p>
                 <span class="angle"> <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></span>
-                <button>Source Code?</button>
+                <button><a href="https://github.com/Amarverma9627/Gym_Fitness.git">Source Code?</a></button>
             </div>
 
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

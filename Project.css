@@ -108,7 +108,7 @@
     font-weight: 700;
     font-size: 2rem;
     padding: 10px;
-    bottom:0;
+    bottom:-11px ;
     letter-spacing: 0.1rem;
 }
 .covid{
@@ -117,7 +117,7 @@
     font-weight: 900;
     font-size:2rem;
     padding:10px;
-   bottom:0px;
+   bottom:-11px;
 }
 .click #icon{
    display:none;
@@ -125,7 +125,7 @@
 .click{
    display:none;
 }
-.nav-list{
+.nav-list a{
     color: black;
     text-decoration: none;
 

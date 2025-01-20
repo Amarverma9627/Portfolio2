@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Spotify-Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Responsive.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <style>
@@ -26,9 +26,7 @@
         html {
             font-size: 62.5%;
         }
-        #spoti-nav a{
-            color: black;
-        }
+
 
         section {
             min-height: 100vh;
@@ -37,13 +35,13 @@
             overflow: hidden;
         }
 
-        #home-spoti p {
-
+        #home-spoti .top p {
+            margin-top:5rem;
             text-align: center;
             color: black;
             font-size: 3.5rem;
             letter-spacing: 0.1rem;
-            margin-top:8rem;
+
         }
 
         #home-spoti h1 {
@@ -54,6 +52,13 @@
             color: rgb(31, 170, 31);
         }
 
+        #home-spoti .about {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            margin-top: 4rem;
+        }
+
         #home-spoti .vdo {
             height: 100%;
             width: 50%;
@@ -61,18 +66,18 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-
-            margin-top: 3rem;
         }
 
-        #home-spoti .about {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
+        #home-spoti .vdo p {
+            color: rgb(142, 10, 194);
+            letter-spacing: 0.1rem;
+            font-size: 2rem;
+            text-align: justify;
+            line-height: 3rem;
+            padding: 3rem;
+            background-image: linear-gradient(to right, rgb(130, 233, 185), transparent);
         }
+
 
         #home-spoti .vdo video {
             opacity: 1;
@@ -101,89 +106,120 @@
 
 
 
-        #home-spoti .more-about{
+        #home-spoti .more-about {
             height: 100%;
             width: 50%;
-            overflow: hidden;
             border-radius: 10px;
             text-align: center;
             transition: all 0.5s ease-in-out;
-            
-        }
 
+        }
         #home-spoti .more-about button {
+            margin-top: 6rem;
+            background-color: #ffffff;
+        }
+        #home-spoti .more-about button a{
             background-color: rgb(255, 196, 0);
             padding: 10px 20px;
-            color: rgb(255, 255, 255);
+            color: #ffffff;
             font-size: 1.5rem;
+            text-decoration: none;
             font-weight: bold;
             border-radius: 5rem;
             cursor: pointer;
             border: 2px solid rgb(255, 174, 0);
             box-shadow: 0 0 20px rgb(255, 187, 0), 0 0 20px yellow;
+           
         }
 
-        #home-spoti .more-about button:hover {
+        #home-spoti .more-about button:hover a{
             border: 2px solid rgb(255, 174, 0);
             font-size: 1.6rem;
-            color: rgba(20, 218, 218, 0.767);
-            background-color: transparent;
+            color: rgba(20, 218, 53, 0.767);
+            background-color:transparent;
             box-shadow: 0 0 20px rgb(255, 187, 0), 0 0 20px yellow;
+
         }
 
-
+        #home-spoti .more-about h1{
+            color: rgb(248, 30, 77);
+            text-align: justify;
+            width: 100%;
+            font-size: 1.7rem;
+            letter-spacing: 0.2rem;
+            line-height: 3rem;
+            background-image: linear-gradient(to right,rgb(223, 255, 165),transparent);
+            padding: 2rem;
+            margin-block: 2rem;
+        }
         #home-spoti .more-about p {
-            color: black;
+            color:rgb(34, 117, 34);
             text-align: justify;
             width: 100%;
             font-size: 2rem;
             letter-spacing: 0.2rem;
-            margin-block: 0 4rem;
+            line-height: 3rem;
+            background-image: linear-gradient(to right,rgb(249, 184, 255),transparent);
+            padding: 2rem;
         }
-        #home-spoti .angle{
-               position: relative;    
-               width:5rem;
-               height: 4rem; 
+
+        #home-spoti .angle {
+            position: relative;
+            width: 5rem;
+            height: 4rem;
         }
-        #home-spoti .angle a i{
+
+        #home-spoti .angle a i {
             font-weight: 600;
-            font-size:3rem;
+            font-size: 3rem;
             color: black;
-            position:absolute;
+            position: absolute;
             left: 6rem;
             top: -5rem;
             transform: rotate(180deg);
             animation: angle 1s ease-in-out infinite;
             transition: all 0.4s linear;
         }
+
+        .spoti-nav a {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-inline: 2.6rem 0rem;
+            letter-spacing: 0.1rem;
+            color: black;
+        }
+
         @keyframes angle {
-            0%{
-               color: yellow;
+            0% {
+                color: yellow;
                 transform: translate(0);
             }
-            50%{   
+
+            50% {
                 transform: translateY(-15px);
             }
-            100%{    
+
+            100% {
                 transform: translate(0);
             }
         }
 
         /* Responsive */
-        @media (max-width:785px){
-            #home-spoti .angle a i{
-                left: 9rem;
-            }
-            #home-spoti p {
-                font-size:3.2rem;
+        @media (max-width:785px) {
+            
+            #home-spoti .top  p {
+                font-size: 3.2rem;
+                margin-top: 10rem;
             }
 
             #home-spoti h1 {
                 font-size: 3.2rem;
             }
+
             #home-spoti .about {
                 flex-direction: column;
             }
+
             #home-spoti .vdo {
                 width: 100%;
             }
@@ -192,28 +228,33 @@
                 height: 100%;
                 width: 100%;
             }
-            #home-spoti .more-about p{
+
+            #home-spoti .more-about p {
                 width: 100%;
-               padding: 3rem;
+                padding: 3rem;
             }
+
             #home-spoti .vdo h1 {
                 font-size: 1.8rem;
                 width: 80%;
             }
-            section{
-                padding:0rem;
+
+            section {
+                padding: 0rem;
             }
-            #home-spoti .more-about button{
-               margin: 3rem;
+
+            #home-spoti .more-about button {
+                margin-block:6rem;
             }
         }
+
         @media (max-width:440px) {
-            #home-spoti p {
-                font-size:2.5rem;
+            #home-spoti .top p{
+                font-size: 2.5rem;
             }
 
             #home-spoti h1 {
-                font-size:2.3rem;
+                font-size: 2.3rem;
             }
 
             #home-spoti .about {
@@ -224,13 +265,15 @@
             #home-spoti .vdo {
                 width: 100%;
             }
+
             #home-spoti .vdo video {
-           
-            height: 100%;
-            width: 90%;
-           
-        }
-        #home-spoti  .vdo h1 {
+
+                height: 100%;
+                width: 90%;
+
+            }
+
+            #home-spoti .vdo h1 {
                 font-size: 1.7rem;
                 width: 80%;
             }
@@ -238,72 +281,88 @@
             #home-spoti .more-about {
                 height: 100%;
                 width: 100%;
-             
+
             }
-            
-            #home-spoti .more-about p{
+
+            #home-spoti .more-about p {
                 width: 100%;
-               
+
             }
-            
+
 
         }
     </style>
 </head>
 
 <body>
-    <header id="header" >
+    <header id="header">
         <div class="logo">
-          <p>AMAR VERMA</p>
+            <p>AMAR VERMA</p>
         </div>
-    
+
         <div class="menu-cross-bar">
-          <div class="show" id="menu-bar">
-            <i class="fa fa-bars" aria-hidden="true" id="menu" onclick="show()"></i>
-          </div>
-          <div class="hide" id="cross-bar">
-            <i class="fa fa-times" aria-hidden="true" id="cancle" onclick="hide()"></i>
-          </div>
+            <div class="show" id="menu-bar">
+                <i class="fa fa-bars" aria-hidden="true" id="menu" onclick="show()"></i>
+            </div>
+            <div class="hide" id="cross-bar">
+                <i class="fa fa-times" aria-hidden="true" id="cancle" onclick="hide()"></i>
+            </div>
         </div>
-    
+
         <div id="list" class="hide">
-          <nav id="nav-list spoti-nav" >
-            <a href="index.html">HOME</a>
-            <!-- <a href="#about">About</a> -->
-            <a href="index.html#education">EDUCATION</a>
-            <a href="index.html#skills">SKILLS</a>
-            <a href="index.html#profiles">PROFILE</a>
-            <a href="index.html#portfolio">PORTFOLIO</a>
-            <a href="index.html#contact">CONTACT</a>
-          </nav>
+            <nav id="nav-list" class=" spoti-nav">
+                <a href="index.html">HOME</a>
+                <a href="index.html#education">EDUCATION</a>
+                <a href="index.html#skills">SKILLS</a>
+                <a href="index.html#profiles">PROFILE</a>
+                <a href="index.html#portfolio">PORTFOLIO</a>
+                <a href="index.html#contact">CONTACT</a>
+                <a href="Projects.html">PROJECTS</a>
+            </nav>
         </div>
-      </header>
+    </header>
 
     <section id="home-spoti">
-        <p>Welcome to my Project !</p>
-        <h1>Spotify Clone</h1>
+        <div class="top">
+            <p>Welcome to my Project !</p>
+            <h1>Spotify Clone</h1>
+        </div>
         <div class="about">
 
             <div class="vdo">
                 <video controls autoplay muted loop src="assets/spoti.mp4"></video>
                 <h1>⇮This video has more detail on how to create a Spotify clone
                 </h1>
+                <p>1)
+                    Features:
+                    Music: Access to millions of songs from artists around the world<br>
+                    2) Podcasts: Access to millions of podcast episodes<br>
+                    3) Audiobooks: Access to hundreds of thousands of audiobooks<br>
+                    Radio stations: Create a radio station and listen to music<br>
+                    4) Browse collections: Browse collections from friends, artists, and celebrities<br>
+                    5) Free and paid options: Basic functions are free, but users can also upgrade to Spotify Premium
+                </p>
             </div>
 
 
             <div class="more-about">
                 <!-- <h3>⇩More...</h3> -->
-                <p>A Spotify clone is a music streaming platform that imitates the features and functionality of
-                    Spotify.
-                    Spotify clones can allow users to: Stream music from a large library, Create playlists, and Have a
-                    personalized music experience.
-                    Some Spotify clones are built using HTML, CSS, and JavaScript.
+                 <h1>
+                    Spotify, audio streaming service that offers users access to music tracks, podcasts, and other media through a subscription model. It is a publicly traded company that was founded by Swedish entrepreneurs Daniel Ek and Martin Lorentzon in 2006.4
+                 </h1>
+                <p>
+                    1) A Spotify clone is a music streaming platform that imitates the features and functionality of
+                    Spotify.<br>
+
+                    2) Spotify clones can allow users to: Stream music from a large library, Create playlists, and Have a
+                    personalized music experience.<br>
+                    3) Some Spotify clones are built using HTML, CSS, and JavaScript.
                     Fully functional spotify clone
                     This project is built using HTML, CSS, and JS and is fully functional and responsive.
 
                 </p>
                 <span class="angle"> <a href="#"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a></span>
-                <button>Source Code?</button>
+                <button><a href="https://github.com/Amarverma9627/Spotify_Clone.git">Source Code?</a></button>
             </div>
 
         </div>

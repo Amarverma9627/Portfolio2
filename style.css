@@ -68,6 +68,7 @@ section {
   text-align: center;
   margin-inline: 2.6rem 0rem;
   letter-spacing: 0.1rem;
+  color: black;
 }
 
 #nav-list a:hover {
@@ -451,6 +452,7 @@ section .right-about {
 
 .para .description {
   text-align: justify;
+  padding-bottom:3rem;
 }
 
 .para .description p {
