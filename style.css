@@ -368,7 +368,7 @@ section .right-about {
 }
 
 .icon-parent:hover:nth-child(1) {
-  background: linear-gradient(skyblue, rgb(15, 83, 185));
+  background-color: black;
 }
 
 .icon-parent:hover:nth-child(2) {
