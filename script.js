@@ -7,7 +7,7 @@ var typed = new Typed('.multiple-text', {
 });
 
 function resume() {
-    window.location.href = 'https://drive.google.com/file/d/197T9t8bVpnX9bue_2HHVq9oKOiqybwGT/view?usp=drive_link'
+    window.location.href = 'https://drive.google.com/file/d/106liCIr4l94MSz8c1_UW5WOK0M94xiPA/view?usp=drive_link'
 }
 
 function project() {
