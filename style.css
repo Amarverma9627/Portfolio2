@@ -253,7 +253,9 @@ section {
 
 }
 
-/* ==========about section code==== */
+/* 
+==========about section code==== 
+*/
 
 #about-container .heading {
   text-transform: uppercase;
@@ -278,8 +280,8 @@ section .left-about {
 
 section .left-about p {
   font-size: 1.9rem;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+
   color:rgba(0, 0, 0, 0.788);
   font-weight: 600;
 }
@@ -397,7 +399,7 @@ section .right-about {
   font-size: 2.5rem;
   color: rgba(0, 0, 0, 0.726);
   text-align: center;
-  padding-block:5rem 5rem;
+  padding-block:7rem 5rem;
   letter-spacing: 0.1rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.192);
 }
@@ -460,14 +462,14 @@ section .right-about {
   font-size:bold;
   line-height: 2.5rem;
   letter-spacing: 0.1rem;
-  color:white;
+  color:rgb(9, 32, 10);
 }
 
 /* =========Skills section code=== */
 #skills .main-heading-skills h1 {
   font-size: 2.5rem;
   color: rgba(0, 0, 0, 0.616);
-  padding-block:5rem 5rem;
+  padding-block:7rem 5rem;
   text-align: center;
   letter-spacing: 0.1rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.192);
@@ -568,7 +570,7 @@ section .right-about {
   font-size: 2.4rem;
   color: rgba(0, 0, 0, 0.664);
   text-align: center;
-  padding-block:5rem 5rem;
+  padding-block:7rem 5rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.096);
 }
 
@@ -699,7 +701,7 @@ section .right-about {
   font-size: 2.4rem;
   color: rgba(0, 0, 0, 0.548);
   text-align: center;
-  padding-block: 10rem 6rem;
+  padding-block: 7rem 6rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.253);
 }
 
@@ -784,7 +786,7 @@ section .right-about {
   font-size: 2.3rem;
   color: rgba(0, 0, 0, 0.616);
   text-align: center;
-  padding-block:5rem 5rem;
+  padding-block:7rem 5rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.185);
 }
 
@@ -971,19 +973,23 @@ section .right-about {
 /* ----footer---- */
 
 #footer {
-  margin-block: 15rem 0;
+  margin-top: 5rem;
+ width: 100%;
+height: 6rem; 
+} 
+.foot{
   width: 100%;
   background-image: url(assets/back.png);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 #footer p {
-  text-align: center;
   font-size: 1.6rem;
   /* width: 100%; */
   height: auto;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.541);
-  padding-block: 5rem 5rem;
   /* border-top: 2px solid rgba(0, 0, 0, 0.288); */
-  background-color: rgba(92, 85, 91, 0.336);
+  color: rgba(255, 255, 255, 0.74);
 }

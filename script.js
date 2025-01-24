@@ -7,7 +7,7 @@ var typed = new Typed('.multiple-text', {
 });
 
 function resume() {
-    window.location.href = 'https://drive.google.com/file/d/1ZdkiMV8nEj6kiB3BjXMFMOMBM-H9Zw46/view?usp=drive_link'
+    window.location.href = 'https://drive.google.com/file/d/197T9t8bVpnX9bue_2HHVq9oKOiqybwGT/view?usp=drive_link'
 }
 
 function project() {
@@ -69,5 +69,31 @@ window.onscroll=()=>{
     
 }
 
-
+function fb(){
+    window.location.href="https://www.facebook.com/vs.king.330?mibextid=ZbWKwL";
+}
+function Whatsapp() {
+     window.location.href="https://wa.me/qr/BVGXJPQECACMF1 "
+}
+function tele() {
+     window.location.href=""
+}
+function twtr() {
+     window.location.href=""
+}
+function yt() {
+     window.location.href="https://www.youtube.com/@coder_amar_10k"
+}
+function git() {
+     window.location.href="https://github.com/Amarverma9627"
+}
+function linked() {
+     window.location.href="https://www.linkedin.com/in/amar-verma-91b27a256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+}
+function insta() {
+     window.location.href="https://www.instagram.com/"
+}
+function yoga() {
+      window.location.href="https://amarverma9627.github.io/YogaClass/"
+}
 

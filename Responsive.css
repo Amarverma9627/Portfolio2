@@ -201,21 +201,26 @@
 
   /* ==space maintain b/w section ==*/
   #profiles .top-heading-profile h1 {
-    padding-block: 0rem 5rem;
+    padding-block: 7rem 2rem;
   }
 
   #skills .main-heading-skills h1 {
-    padding-block: 5rem 5rem;
+    padding-block: 7rem 2rem;
   }
 
   #education .top-heading {
-    padding-block: 5rem 5rem;
+    padding-block: 7rem 2rem;
   }
 
   .main-padding .name h1 {
     font-size: 4.8rem;
   }
-
+  #portfolio .main-portfo-heading h1{
+    padding-block: 7rem 2rem;
+  }
+  #contact .contact-heading-main {
+    padding-block: 7rem 2rem;
+  }
   #footer {
     margin-block: 10rem 0;
 
@@ -736,10 +741,10 @@
 
   }
   #profiles .top-heading-profile h1{
-    padding-block: 5rem 5rem;
+    padding-block: 7rem 2rem;
   }
   #contact .contact-heading-main {
-    margin-block:5rem 5rem;
+    margin-block:0rem 2rem;
   }
 
   /* ==header== */
@@ -834,7 +839,7 @@
   }
   
 
-  }
+
 
   #education .top-heading{
     color: white;
@@ -911,3 +916,5 @@
     transition: all 0.4s ease-in-out;
     z-index: -1;
   }
+
+}
