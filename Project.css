@@ -10,32 +10,69 @@
     position: relative;
     min-height: 100vh;
     overflow: hidden;
-    padding-block:10rem 0;
+    padding-block:7rem 0;
 }
 
 
 #home-main .project {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, auto));
     justify-content:space-evenly;
    margin: 3rem;
-    gap:4rem;
+    gap:4rem; */
     position: relative;
+    width: 60%;
+    height: 450px;
+    margin: auto;
+    top: 1rem;
+    overflow: hidden;
 }
 #home-main .project-pic{
-    
-    position:relative;
+    transition: all 0.4s;
+    position:absolute;
     overflow: hidden;
     height:auto;
     width:100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius:5px;
     box-shadow: 0 0 5px rgb(255, 255, 255);
-    background-color: rgba(68, 66, 66, 0.623);
+    background-color: rgb(44, 42, 42);
 }
+
+.nav {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.nav button:first-child{
+    position: absolute;
+    color:red;
+    font-size:4rem;
+    left:20rem;
+    top: 32rem;
+    font-weight: 900;
+    background-color: rgb(192, 182, 182);
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav button:last-child{
+    position: absolute;
+    color:red;
+    font-size:4rem;
+    right: 20rem;
+    top: 32rem;
+    font-weight: 900;
+    background-color: rgb(192, 182, 182);
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 #home-main .project-pic img {
     width: 100%;
-    height: 85%;
+    height: 90%;
     padding:10px;
     border-radius: 20px;
 }
@@ -143,6 +180,28 @@
     }
 }
 /* Responsive */
+@media (max-width:1024px) {
+    #home-main .project{
+        width: 60%;
+        height: 400px;
+    }
+}
+@media (max-width:910px) {
+    #home-main .project{
+        width: 60%;
+        height: 350px;
+    }
+    .nav button:first-child{
+        left:10rem;
+        top: 30rem;   
+    }
+    
+    .nav button:last-child{
+        right:10rem;
+        top: 30rem;
+    }
+    
+}
 
 @media (max-width:630px) {
     #home-main .project {
@@ -158,6 +217,19 @@
     .Proj{
         color:black;
     }
+    #home-main .project{
+        width: 60%;
+        height: 300px;
+    }
+    .nav button:first-child{
+        left:7rem;
+        top: 30rem;   
+    }
+    
+    .nav button:last-child{
+        right:7rem;
+        top: 30rem;
+    }
     
 }
 @media (max-width:450px){
@@ -167,5 +239,18 @@
     .project-pic  .classes_content p{
         font-size:1rem;
           
+    }
+    #home-main .project{
+        width: 80%;
+        height: 280px;
+    }
+    .nav button:first-child{
+        left:0.5rem;
+        top: 30rem;   
+    }
+    
+    .nav button:last-child{
+        right:0.5rem;
+        top: 30rem;
     }
    }
