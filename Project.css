@@ -234,7 +234,7 @@
 }
 @media (max-width:450px){
     .project-pic p{
-        font-size:1.3rem;
+        font-size:1.9rem;
     }
     .project-pic  .classes_content p{
         font-size:1rem;
@@ -242,15 +242,15 @@
     }
     #home-main .project{
         width: 80%;
-        height: 280px;
+        height: 220px;
     }
     .nav button:first-child{
         left:0.5rem;
-        top: 30rem;   
+        top:25rem;   
     }
     
     .nav button:last-child{
         right:0.5rem;
-        top: 30rem;
+        top: 25rem;
     }
    }
