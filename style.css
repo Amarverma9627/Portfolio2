@@ -721,6 +721,13 @@ section .right-about {
   height: auto;
   transition: all 0.5s ease-in-out;
 }
+#portfolio .portfo-wrapper .mid-img img{
+  height: 100%;
+  transition: all 0.4s;
+}
+#portfolio .portfo-wrapper .mid-img img:hover{
+  transform: scale(1.14);
+}
 
 #portfolio .portfo-wrapper img:hover {
   transform: scale(1.45);

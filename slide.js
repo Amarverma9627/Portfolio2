@@ -16,16 +16,12 @@ const next = () => {
         count++;
         slideImg()
     }
-    if (count == 3) {
-        count = 0;
-    }
+   
 }
 const prev = () => {
     if (count >= 0) {
         count--;
         slideImg()
     }
-    if(count == 0) {
-        count == 3;
-    }
+    
 }
