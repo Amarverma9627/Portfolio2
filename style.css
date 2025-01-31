@@ -394,6 +394,7 @@ section .right-about {
 /* ========education section code==== */
 #education{
   background-image:linear-gradient(rgb(243, 184, 255),rgb(243, 184, 255));
+  
 }
 #education .top-heading {
   font-size: 2.5rem;
@@ -463,6 +464,7 @@ section .right-about {
   line-height: 2.5rem;
   letter-spacing: 0.1rem;
   color:rgb(9, 32, 10);
+ 
 }
 
 /* =========Skills section code=== */
@@ -730,6 +732,7 @@ section .right-about {
 }
 
 #portfolio .portfo-wrapper img:hover {
+ 
   transform: scale(1.45);
 }
 
