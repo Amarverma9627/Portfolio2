@@ -396,6 +396,7 @@ section .right-about {
   background-image:linear-gradient(rgb(243, 184, 255),rgb(243, 184, 255));
   
 }
+
 #education .top-heading {
   font-size: 2.5rem;
   color: rgba(0, 0, 0, 0.726);
@@ -403,6 +404,7 @@ section .right-about {
   padding-block:7rem 5rem;
   letter-spacing: 0.1rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.192);
+
 }
 
 #education .top-heading span {
@@ -414,6 +416,7 @@ section .right-about {
   grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
   gap: 1rem;
   padding-block:3rem 0px;
+ 
 }
 
 #education .flex-para .para {
