@@ -122,7 +122,7 @@ section {
   background-color: rgb(0, 0, 0);
   position: absolute;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.6;
   width: 100%;
   top: 0;
   left: 0;
@@ -795,27 +795,32 @@ section .right-about {
 
 
 /* =======contact-section-code==== */
+#contact {
+  background-image: linear-gradient(to right,rgb(211, 116, 248),transparent);
+  margin-block-start: 40px;
+}
 #contact .contact-heading-main {
   font-size: 2.3rem;
-  color: rgba(0, 0, 0, 0.616);
+  color:white;
   text-align: center;
-  padding-block:7rem 5rem;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.185);
+  padding-block:7rem 2rem;
+  border-bottom: 2px solid rgba(248, 247, 247, 0.185);
+  
 }
 
 #contact .contact-info {
   display: flex;
-  margin-block: 5rem 0;
+  margin-block: 0rem 0;
 }
 
 /* ----left-contect-code--- */
 #contact .contact-info .left-contact {
   width: 60%;
   height: 100%;
-  /* background-color: red; */
-  display: flex;
+   display: flex;
   flex-direction: column;
   gap: 3rem;
+  margin-block-start: 2rem;
   align-items: center;
 }
 
@@ -823,24 +828,26 @@ section .right-about {
   height: 3.5rem;
   width: 19rem;
   margin-inline: 0 1rem;
-  border-bottom: 1px solid rgba(70, 68, 68, 0.863);
+  outline: none;
+  border-bottom: 1px solid rgba(243, 238, 238, 0.863);
   font-size: 1.7rem;
-  opacity: 0.6;
+  opacity: 1;
   text-align: center;
-  background-color: transparent;
+  backdrop-filter: blur(10px);
+background-color: transparent;
   font-weight: 600;
   font-family: inherit;
+  
 }
 
 .contact-info .left-contact .Subject input {
   height: 3.5rem;
   width: 40rem;
   border-bottom: 1px solid rgb(70, 68, 68);
-  opacity: 0.6;
   font-weight: 600;
   font-size: 1.7rem;
   text-align: center;
-  background-color: transparent;
+  color: black;
 }
 
 .contact-info .left-contact .form-group textarea{
@@ -849,12 +856,13 @@ section .right-about {
   font-weight: 600;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 22rem;
-  color: rgb(0, 0, 0);
+  color: black;
   padding: 2.5rem;
   opacity: 0.7;
   border-radius: 1rem;
   box-shadow: -3px -3px 1rem rgba(0, 0, 0, 0.356), 5px 5px 1rem white;
   margin-block: 2rem 0rem;
+  letter-spacing: 1px;
 }
 
 .left-contact .btn button {
@@ -881,6 +889,7 @@ section .right-about {
   flex-direction: column;
   align-items: left;
   justify-content: center;
+   margin-block-start: 2rem;
 }
 
 .right-info {
@@ -986,7 +995,7 @@ section .right-about {
 /* ----footer---- */
 
 #footer {
-  margin-top: 5rem;
+  
  width: 100%;
 height: 6rem; 
 } 
